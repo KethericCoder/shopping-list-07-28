@@ -4,7 +4,7 @@ function shoppingList() {
   
   $('#js-shopping-list-form').submit(function(event){
     event.preventDefault();
-    let listItem = $('#js-shopping-list-entry').val();
+    let listItem = $('#shopping-list-entry').val();
       
     if (listItem !== '') {
       $('.shopping-list').append(`<li>
@@ -18,7 +18,7 @@ function shoppingList() {
         </button>
         </div>
         </li>`);
-      $('#js-shopping-list-entry').val('');
+      $('#shopping-list-entry').val('');
     }
   });
   
